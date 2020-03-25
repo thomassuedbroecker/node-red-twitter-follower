@@ -86,7 +86,7 @@ That section contains six major steps to setup the _Twitter-follower-flow_ examp
 3. Install a additional Node to the Node-RED instance
 4. Import the Node-RED flow
 5. Configure the Node-RED flow
-6. (Optional) Example of an execution of the Node-RED flow
+6. Introduction to the Node-RED flow (13 min video)
 
 In the image you see the full flow.
 
