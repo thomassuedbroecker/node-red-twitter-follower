@@ -96,8 +96,8 @@ In the image you see the full flow.
 
 ### Step 1: Setup Twitter developer application
 
-You need an Twitter account and a Twitter developer application.
-With your Twitter account you can access **Twitter developer API** and create a Twitter application. That application provides the needed credenticals to access the Twitter API, which is used in that example.
+You need a Twitter account and a Twitter developer application.
+With your Twitter account you can access **Twitter developer API** and create a Twitter application. That application provides the needed credentials to access the Twitter API, which is used in that example.
 
 #### a. [Link to add a Twitter developer application](https://developer.twitter.com/en/apps). 
 
@@ -215,9 +215,11 @@ That image shows _HTTP requests nodes_ to be change.
 
 ---
 
-### Step 6: Example of an execution of the Node-RED flow
+### Step 6: Introduction to the Node-RED flow
 
-**TBD YouTube Video**
+The YouTube video gives a 13 min introduction to the _Twitter-follower-flow_.
+
+[![Introduction to the Node-RED flow](https://img.youtube.com/vi/4HvBya4Zhn8/0.jpg)](https://www.youtube.com/watch?v=4HvBya4Zhn8 "Click play on youtube")
 
 ---
 
