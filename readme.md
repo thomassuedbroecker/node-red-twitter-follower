@@ -51,7 +51,7 @@ The _Twitter-follower-flow_ is an concrete example of following topics ...
  * ... the **implementation** of Node-RED REST endpoints.
 
    1. Create a very basic authentication to protect each Node-RED endpoint
-   2. Realize the two step authentication to access the Twitter developer API:
+   2. Realize the two step authentication _(also known as two-factor authentication)_ to access the Twitter developer API:
         1. Basic authentication with a key and secret to request a bearer token from Twitter
         2. Use the bearer token for authentication to use the Twitter API 
    3. Get the follower list from Twitter using the bearer token
