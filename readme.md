@@ -94,7 +94,7 @@ In the image you see the full flow.
 ### Step 1: Setup Twitter developer application
 
 You need a Twitter account and a Twitter developer application.
-With your Twitter account you can access **Twitter developer API** and create a Twitter application. That application provides the needed credentials to access the Twitter API, which is used in that example.
+With your Twitter account can register for the **Twitter developer API** and create a Twitter developer application. That application provides the needed credentials to access the Twitter API, which is used in that example.
 
 #### a. [Link to add a Twitter developer application](https://developer.twitter.com/en/apps). 
 
@@ -145,7 +145,7 @@ We need to configure ...
 
 #### a. Set Twitter API key and secret
 
-Insert the values for the `user` and `secret` of the Twitter API credentials in the _function_ `set user and secret`. The image shows a example, where you get the credentials information.
+Insert the values for the `user` and `secret` of the Twitter API credentials in the _function_ `set user and secret`. The image shows an example, where you get the credentials information.
 
 ![](images/configure-twitter-auth.png)
 
