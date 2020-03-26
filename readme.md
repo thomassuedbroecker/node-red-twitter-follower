@@ -44,7 +44,7 @@ The UseCase **_"Extract the twitter follower list"_** addresses three topics lis
   2. Automate the **authentication** the two step authentication of the Twitter developer API.
   3. **Extract data** from the Twitter follower list and build an own list.
 
-## 2. Topics of the Node-RED usage
+## 2. Topics related to the Node-RED usage
 
 The _Twitter-follower-flow_ is an concrete example of following topics ...
 
