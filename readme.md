@@ -72,6 +72,10 @@ The _Twitter-follower-flow_ is an concrete example of following topics ...
 
  * ... the **usage** of flow variables to exchange values between functions in the _Twitter-follower-flow_.
 
+ The gifs show a execution of the _Twitter-follower-flow_:
+
+![](images/twitter-follower-flow-execution.png)
+
 ---
 
 ## 3. Setup the Twitter-follower-flow example 
