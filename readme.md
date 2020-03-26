@@ -1,6 +1,3 @@
-
-**!!!! UNDER CONSTRUCTION !!!!**
-
 # Node-RED Twitter-follower-flow
 
 Node-RED is very good for prototyping, that is the reason why it is often used in hackathons. If you are new to Node-RED and you start to develop a Node-RED flow, you normally have following challenges: 
