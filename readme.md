@@ -20,8 +20,8 @@ The database topic with CRUD isn't covered. The CRUD (Create, Read, Update, Dele
   * ... is based on open technologies
 
   * ... creates no additional costs 
-    * Uses a free runtime on IBM Cloud
-    * Uses the free Twitter developer API
+    * Uses a free runtime on [IBM Cloud](https://ibm.biz/BdqZTm)
+    * Uses the free [Twitter developer API](https://developer.twitter.com/en)
 
   * ... has following technical level:
     * Beginner to intermediate 
