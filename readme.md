@@ -17,7 +17,7 @@ The database topic with CRUD isn't covered. The CRUD (Create, Read, Update, Dele
 
 * **The "Twitter-follower-flow" example ...**
 
-  * ... is based on open technologies
+  * ... uses open technologies (Node-RED is a Project of the [OpenJS foundation](https://openjsf.org/)
 
   * ... creates no additional costs 
     * Uses a free runtime on [IBM Cloud](https://ibm.biz/BdqZTm)
