@@ -13,7 +13,7 @@ Node-RED is very good for prototyping, that is the reason why it is often used i
   4. ... **customize data** and **CRUD** with databases? 
 
 The Node-RED flow of that project has the objective to provide an (little advanced) introduction to the first three topics above.
-The database topic with CRUD isn't covered. The CRUD (Create, Read, Update, Delete) topic that is not covered here. Visit that [CRUD example](https://github.com/gitjps/Node-RED-Cloudant-CRUD) for more information.
+The CRUD (Create, Read, Update, Delete) topic that is not covered here. Visit that [CRUD example](https://github.com/gitjps/Node-RED-Cloudant-CRUD) for more information.
 
 * **The "Twitter-follower-flow" example ...**
 
