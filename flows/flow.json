@@ -164,7 +164,7 @@
         "proxy": "",
         "authType": "",
         "x": 210,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "9aed0ab6.f54e78"
@@ -269,7 +269,7 @@
         "complete": "true",
         "targetType": "full",
         "x": 840,
-        "y": 1060,
+        "y": 1080,
         "wires": []
     },
     {
@@ -277,7 +277,7 @@
         "type": "function",
         "z": "74eba602.6446d",
         "name": "set twitter user and page cursor",
-        "func": "// Set the tweeter request query parameter before the loop\n\n// Data is used in the REST request \n// (Issue Twitter API REST Request (GET))\n// -----------------------------------------------------------------------\n// https://api.twitter.com/1.1/followers/list.json?\n//   screen_name={{{twitterSN}}}&\n//   cursor={{{twitterCursor}}}&\n//   count={{{twitterCount}}}\n\n// For more information visit get-followers-list:\n// https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-list\nmsg.payload = flow.get(\"bearer_token\")\n\n// Prepare the get follower request parameter\nmsg.twitterCursor = flow.get(\"twitterCursor\");\nmsg.twitterCount = flow.get(\"twitterResultCount\");\nmsg.twitterSN = flow.get(\"twitterSN\");\n\nmsg.nodereduser = flow.get(\"nodereduser\");\nmsg.noderedpassword = flow.get(\"noderedpassword\");\n\nreturn msg;",
+        "func": "// Set the tweeter request query parameter before the loop\n\n// Data is used in the REST request \n// (Issue Twitter API REST Request (GET))\n// -----------------------------------------------------------------------\n// https://api.twitter.com/1.1/followers/list.json?\n//   screen_name={{{twitterSN}}}&\n//   cursor={{{twitterCursor}}}&\n//   count={{{twitterCount}}}&\n//   nodereduser={{{nodereduser}}}&\n//   noderedpassword={{{{noderedpassword}}}\n\n// For more information visit get-followers-list:\n// https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-list\nmsg.payload = flow.get(\"bearer_token\")\n\n// Prepare the get follower request parameter\nmsg.twitterCursor = flow.get(\"twitterCursor\");\nmsg.twitterCount = flow.get(\"twitterResultCount\");\nmsg.twitterSN = flow.get(\"twitterSN\");\n\nmsg.nodereduser = flow.get(\"nodereduser\");\nmsg.noderedpassword = flow.get(\"noderedpassword\");\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 710,
@@ -301,7 +301,7 @@
         "complete": "payload",
         "targetType": "msg",
         "x": 990,
-        "y": 680,
+        "y": 700,
         "wires": []
     },
     {
@@ -313,7 +313,7 @@
         "action": "obj",
         "pretty": false,
         "x": 410,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "58e13789.271eb8",
@@ -326,7 +326,7 @@
         "type": "function",
         "z": "74eba602.6446d",
         "name": "set_basic_auth",
-        "func": "// Set basic auth\nflow.set(\"auth\", msg.payload);\nmsg.payload = flow.get(\"auth\");\n\n// Init parameters:\n// For more information visit get-followers-list:\n// https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-list\nflow.set(\"twitterCursor\", \"-1\");\nflow.set(\"twitterResultCount\", \"50\");\nflow.set(\"twitterSN\", \"YOUR DISPLAY NAME\");\n\nmsg.nodereduser = flow.get(\"nodereduser\");\nmsg.noderedpassword = flow.get(\"noderedpassword\");\n\nreturn msg;",
+        "func": "// Set basic auth\nflow.set(\"auth\", msg.payload);\nmsg.payload = flow.get(\"auth\");\n\n// Init parameters:\n// For more information visit get-followers-list:\n// https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-list\nflow.set(\"twitterCursor\", \"-1\");\nflow.set(\"twitterResultCount\", \"50\");\nflow.set(\"twitterSN\", \"TWITTER_DISPLAY_NAME\");\n\nmsg.nodereduser = flow.get(\"nodereduser\");\nmsg.noderedpassword = flow.get(\"noderedpassword\");\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 660,
@@ -347,7 +347,7 @@
         "action": "obj",
         "pretty": false,
         "x": 150,
-        "y": 900,
+        "y": 920,
         "wires": [
             [
                 "d59fbe7a.ec413",
@@ -364,7 +364,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 450,
-        "y": 900,
+        "y": 920,
         "wires": [
             [
                 "29fbdbce.737a74",
@@ -395,7 +395,7 @@
         "repair": false,
         "outputs": 2,
         "x": 410,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "9477bd6c.38f748"
@@ -414,7 +414,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 610,
-        "y": 1080,
+        "y": 1100,
         "wires": [
             [
                 "acf23bc2.b325a8",
@@ -431,7 +431,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 620,
-        "y": 1040,
+        "y": 1060,
         "wires": [
             [
                 "acf23bc2.b325a8",
@@ -451,7 +451,7 @@
         "complete": "payload",
         "targetType": "msg",
         "x": 280,
-        "y": 940,
+        "y": 960,
         "wires": []
     },
     {
@@ -466,7 +466,7 @@
         "complete": "payload",
         "targetType": "msg",
         "x": 990,
-        "y": 900,
+        "y": 920,
         "wires": []
     },
     {
@@ -494,7 +494,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 670,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "9ab75289.0fc7d"
@@ -512,7 +512,7 @@
         "tostatus": false,
         "complete": "false",
         "x": 1010,
-        "y": 1140,
+        "y": 1160,
         "wires": []
     },
     {
@@ -532,7 +532,7 @@
         "name": "Verify end of follower list",
         "info": "",
         "x": 210,
-        "y": 1020,
+        "y": 1040,
         "wires": []
     },
     {
@@ -540,7 +540,7 @@
         "type": "function",
         "z": "74eba602.6446d",
         "name": "set user and secret",
-        "func": "var user = \"YOUR KEY\";\nvar secret = \"YOUR SECRET\"\nvar nodereduser = \"admin\";\nvar noderedpassword = \"notreallysecure\"\n\nflow.set(\"nodereduser\", nodereduser);\nflow.set(\"noderedpassword\", noderedpassword);\n\nmsg.payload = user + \":\" + secret;\n\nreturn msg;",
+        "func": "var user = \"TWITTER-KEY\";\nvar secret = \"TWITTER-KEY-SECRET\"\nvar nodereduser = \"admin\";\nvar noderedpassword = \"notreallysecure\"\n\nflow.set(\"nodereduser\", nodereduser);\nflow.set(\"noderedpassword\", noderedpassword);\n\nmsg.payload = user + \":\" + secret;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 190,
@@ -558,7 +558,7 @@
         "name": "Request next page",
         "info": "",
         "x": 750,
-        "y": 940,
+        "y": 960,
         "wires": []
     },
     {
@@ -616,7 +616,7 @@
         "type": "debug",
         "z": "74eba602.6446d",
         "name": "getToken HTTP input",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -717,7 +717,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 840,
-        "y": 300,
+        "y": 320,
         "wires": [
             [
                 "8ecb7347.fe94c8"
