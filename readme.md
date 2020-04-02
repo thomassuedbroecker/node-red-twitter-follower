@@ -32,6 +32,9 @@ The CRUD (Create, Read, Update, Delete) topic that is not covered here. Visit th
     5. Configure the flow
     6. Run the flow
 
+The YouTube video gives a 13 min introduction to the _Twitter-follower-flow_.
+
+[![Introduction to the Node-RED flow](https://img.youtube.com/vi/4HvBya4Zhn8/0.jpg)](https://www.youtube.com/watch?v=4HvBya4Zhn8 "Click play on youtube")
 
 ## 1. The UseCase
 
@@ -74,7 +77,7 @@ The _Twitter-follower-flow_ is an concrete example of following topics ...
 
 The gif shows a execution of the _Twitter-follower-flow_:
 
-![](images/twitter-follower-flow-execution.png)
+![](images/twitter-follower-flow-execution.gif)
 
 ---
 
@@ -235,7 +238,7 @@ That is the implementation of the REST endpoints in Node-RED _Twitter-follower-f
 
 Both Node-RED HTTP endpoints encapsulating the invocation of the Twitter API call.
 Each endpoint validates the custom defined `nodeusername` and `noderedpassword`, before they start to send the REST call of the **Twitter API** and provide the result.
- 
+
 * Endpoint _(POST)_: `/getToken` Gets the bearer token from the Twitter API and saves the token in a flow variable.
 * Endpoint _(GET)_: `/followers` Does the authorization with the bearer token and gets a follower list for a _user display name_ in a _page size_ of 50 entries.
 
@@ -265,7 +268,7 @@ This endpoint does encapsulate the invocation of the external Twitter API call `
   //https://[YOUR NODE_RED URL]/followers?screen_name={{twitterSN}}}&count={{{twitterCount}}}&cursor={{{twitterCursor}}}&nodereduser={{{nodereduser}}}&noderedpassword={{{noderedpassword}}}
 
 ```
-  
+
 This is the **Twitter API** invocation in the HTTP node `Request twitter follower list`, when the simple user validation was successful.
 
 ```javascript
@@ -569,7 +572,7 @@ That is the JSON format of the new follower list.
       }]
   }
 }
-``` 
+```
 
 This is the code of the function `build followers name list`.
 
